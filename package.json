@@ -1,0 +1,22 @@
+{
+  "name": "squid",
+  "version": "1.0.0",
+  "description": "Teste tecnico - Engenheiro de Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "squid",
+    "desafio",
+    "instagram"
+  ],
+  "author": "Michael Heo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0"
+  }
+}

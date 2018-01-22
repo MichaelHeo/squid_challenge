@@ -1,0 +1,12 @@
+Como usuário
+    Desejo pesquisar uma hashtag no Instagram e salvar o resultado
+    Para poder consultar as fotos da pesquisa no futuro.
+Como usuário
+    Desejo excluir uma hashtag previamente cadastrada
+    Para que ela não seja mais listada
+
+Stack
+● MongoDB
+● Express/Hapi/Koa
+● Angular/React/Vue.js
+● Node.js
