@@ -3,12 +3,25 @@ module.exports = function(app) {
     app.get('/find', function(req, res){
         
         let tagDao = new app.persistencia.mongo
-        var result = tagDao.find({}).toArray(function(err, result){
-            res.send(result);
+        let result = tagDao.find()
+        result.find({}, function(err, tag){
+            if(err){
+                res.status(400).send(err)
+            }
+            res.status(200).json(tag)
         })
-    
-        res.status(200).send(result)
 
+    })
+
+    app.get('/find/instagram', function(req, res){
+        
+        let access_token = '29073043.c0b5686.7d8c42cf7c4b41b6aa0741ccaf9f0b87'
+        let tagName = req.body
+        let tagDao = new app.persistencia.mongo
+        var insta = tagDao.findInsta()
+        insta.get('/v1/tags/'+tagName.name+'/media/recent?access_token='+access_token, function(error, request, response, retorno){
+            res.status(200).json(retorno)
+        })
     })
 
     app.post('/insert', function(req, res){
