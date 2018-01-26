@@ -6,7 +6,7 @@ var instagram = restify.createJsonClient({
 })
 var access_token = '29073043.c0b5686.7d8c42cf7c4b41b6aa0741ccaf9f0b87'
 
-mongoose.connect('mongodb://localhost:27017/test')
+mongoose.connect('mongodb://mikaheo:John1135@ds115758.mlab.com:15758/instgahashapi')
 var Schema = mongoose.Schema
 
 // Criando um Schema
