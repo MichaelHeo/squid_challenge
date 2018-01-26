@@ -10,6 +10,10 @@ Esse repositório é o **back-end** do desafio.
 - [Body Parser](https://www.npmjs.com/package/body-parser)
 - [Express Validator](https://github.com/ctavan/express-validator)
 - [Cors](https://github.com/expressjs/cors)
+- [MongoDB](https://www.mongodb.com/)
+
+## Heroku
+- [mLab](https://mlab.com)
 
 
 ## ESPERO QUE TENHAM GOSTADO!
