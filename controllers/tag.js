@@ -13,7 +13,7 @@ module.exports = function(app) {
 
     })
 
-    app.get('/find/instagram', function(req, res){
+    app.post('/find/instagram', function(req, res){
         
         let access_token = '29073043.c0b5686.7d8c42cf7c4b41b6aa0741ccaf9f0b87'
         let tagName = req.body
@@ -44,6 +44,7 @@ module.exports = function(app) {
 
         let tagName = req.body
         let tagDao = new app.persistencia.mongo
+        console.log(tagName)
         tagDao.delete(tagName, function(erro){
             if(erro){
                 console.log('Erro ao inserir no bd: ' + erro)
